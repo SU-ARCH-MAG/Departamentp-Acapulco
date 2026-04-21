@@ -39,8 +39,10 @@
     }
 
     .item img {
-  width: 360px;   /* ancho fijo pensado para teléfono */
-  height: auto;   /* mantiene la proporción original */
+  width: 360px;      /* ancho fijo como en teléfono */
+  max-height: 500px; /* altura máxima para que no se vean achatadas */
+  height: auto;      /* mantiene proporción */
+  object-fit: contain; /* asegura que no se deforme */
   display: block;
   margin-bottom: 8px;
   border-radius: 8px;
