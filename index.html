@@ -98,25 +98,5 @@
     </a>
   </div>
 
-  <script>
-    const galeria = document.getElementById('galeria');
-
-    // Duplicar contenido para simular infinito
-    galeria.innerHTML += galeria.innerHTML;
-
-    function autoScroll() {
-      galeria.scrollBy({
-        left: 2,
-        behavior: 'smooth'
-      });
-
-      // Si llega a la mitad, regresa al inicio
-      if (galeria.scrollLeft >= galeria.scrollWidth / 2) {
-        galeria.scrollTo({ left: 0 });
-      }
-    }
-
-    setInterval(autoScroll, 30);
-  </script>
 </body>
 </html>
