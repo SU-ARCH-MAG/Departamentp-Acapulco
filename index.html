@@ -1,114 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta charset="UTF-8">
-  <title> Departamento Veleta Acapulco </title>
+  <title>Departamento Veleta Acapulco</title>
   
   <style>
-  body {background-color: black; margin: 0; height: auto;} 
+    body {
+      background-color: black;
+      margin: 0;
+      height: auto;
+      font-family: Arial, sans-serif;
+    }
 
-    .galeria { display: flex; -webkit-overflow-scrolling: touch; flex-direction: row; overflow-x: auto; scroll-behavior: smooth; gap: 10px; padding: 10px; border: 2px solid #333; }
+    .galeria {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+      gap: 10px;
+      padding: 10px;
+      border: 2px solid #333;
+    }
 
-    .galeria img { height: auto; max-height: 200px; width: auto; flex-shrink: 0; border-radius: 8px; border: 2px solid #ccc; }
+    .galeria img {
+      height: auto;
+      max-height: 200px;
+      width: auto;
+      flex-shrink: 0;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+    }
 
-   .item { flex: 0 0 auto; text-align: center; }
-   .item img { width: 200px; display: block; margin-bottom: 8px; }
+    .item {
+      flex: 0 0 auto;
+      text-align: center;
+    }
 
-    p {color:white; }
+    .item img {
+      width: 200px;
+      display: block;
+      margin-bottom: 8px;
+    }
 
-</style>
+    p {
+      color: white;
+    }
+
+    h1, h2 {
+      color: white;
+    }
+
+    button {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
 
 <body>
   <div style="text-align:center;">
+    <h1>Departamento Veleta en Acapulco</h1>
+    <h2>Increíble departamento a solo 10 minutos de la playa. Disfruta un fin de semana divertido y relajado a un lado del mar.</h2>
+    <p style="font-size:20px;">
+      Súper departamento con dos habitaciones, baño, sala, cocina, comedor, lavandería, aire acondicionado, televisión de 40 pulgadas y más sorpresas.
+    </p>
 
-  <h1 style="color: white;"> Departamento Veleta en Acapulco </h1>
-  <h2 style="color: white;">Increible Departamento a solo 10 minutos de la playa, disfruta un fin de semana divirtido y relajado a un lado del mar. </h2>
-  <p style="color:white; font-size:20px;">
-    Super departamento con dos habitaciones, baño, sala, cocina, comedor, lavanderia, aire acondicionado, television de 40 pulgadas y más sorpresas. 
-  </p>
-  <a href="https://wa.me/5215546690423?text=Hola!%20Departamento%20Veleta%20Acapulco,%20Informes%20Porfavor." target="_blank">
-  <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; font-size:16px;">
-    WhatsApp
-  </button>
-</a>
-  <p>  ¡Estamos a la orden! </p>
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/5215546690423?text=Hola!%20Departamento%20Veleta%20Acapulco,%20Informes%20Porfavor." target="_blank">
+      <button>WhatsApp</button>
+    </a>
 
-<div class="galeria">
-  <div class="item">
-    <img src="IMG1.jpeg" alt="Cocina">
-    <p>Cocina</p>
+    <p>¡Estamos a la orden!</p>
+
+    <!-- Galería -->
+    <div class="galeria" id="galeria">
+      <div class="item"><img src="IMG1.jpeg" alt="Cocina"><p>Cocina</p></div>
+      <div class="item"><img src="IMG2.jpeg" alt="Cocina"><p>Cocina</p></div>
+      <div class="item"><img src="IMG3.jpeg" alt="Baño"><p>Baño</p></div>
+      <div class="item"><img src="IMG4.jpeg" alt="Baño"><p>Baño</p></div>
+      <div class="item"><img src="IMG9.jpg" alt="Sala"><p>Sala</p></div>
+      <div class="item"><img src="IMG5.jpeg" alt="Comedor"><p>Comedor</p></div>
+      <div class="item"><img src="IMG6.jpeg" alt="Recamara"><p>2 Recámaras con camas king size y Aire Acondicionado</p></div>
+      <div class="item"><img src="IMG7.jpeg" alt="Privado"><p>Fraccionamiento Privado</p></div>
+      <div class="item"><img src="IMG8.jpeg" alt="Hamacas"><p>Zona de Hamacas</p></div>
+    </div>
+
+    <!-- Segundo botón de WhatsApp -->
+    <a href="https://wa.me/5215546690423?text=Hola%20Departamento%20Veleta%20Acapulco%20Informes%20Porfavor" target="_blank">
+      <button>WhatsApp</button>
+    </a>
   </div>
-
-  <div class="item">
-    <img src="IMG2.jpeg" alt="Cocina">
-    <p>Cocina</p>
-  </div>
-
-  <div class="item">
-    <img src="IMG3.jpeg" alt="Baño">
-    <p>Baño</p>
-  </div>
-
-  <div class="galeria">
-  <div class="item">
-    <img src="IMG4.jpeg" alt="Baño">
-    <p>Baño</p>
-  </div>
-
-  <div class="item">
-    <img src="IMG5.jpeg" alt="Sala">
-    <p> Sala </p>
-  </div>
-
-  <div class="item">
-    <img src="IMG6.jpeg" alt="Recamaras">
-   <p> 2 Recamaras con camas king size y Aire Acondicioado </p>
-     </div>
-
-  <div class="item">
-    <img src="IMG7.jpeg" alt="Privado ">
-    <p> Fraccionamiento Privado </p>
-  </div>
-
-  <div class="item">
-    <img src="IMG8.jpeg" alt="Hamacas">
-    <p> Zona de Hamacas </p>
-  </div>
-
-  </div>
-  </div> 
 
   <script>
+    const galeria = document.getElementById('galeria');
 
-  const galeria = document.querySelector('.galeria');
+    // Duplicar contenido para simular infinito
+    galeria.innerHTML += galeria.innerHTML;
 
-  // Función para desplazar automáticamente
-  function autoScroll() {
-    galeria.scrollBy({
-      left: 2,   
-      behavior: 'smooth'
-    });
+    function autoScroll() {
+      galeria.scrollBy({
+        left: 2,
+        behavior: 'smooth'
+      });
 
-    if (galeria.scrollLeft + galeria.clientWidth >= galeria.scrollWidth) {
-      galeria.scrollTo({ left: 0, behavior: 'smooth' });
+      // Si llega a la mitad, regresa al inicio
+      if (galeria.scrollLeft >= galeria.scrollWidth / 2) {
+        galeria.scrollTo({ left: 0 });
+      }
     }
-  }
 
-  setInterval(autoScroll, 30);
-</script>
-
-
-  <p></p>
-  <a href="https://wa.me/5215546690423?text=Hola%20Departamento%20Veleta%20Acapulco%20Informes%20Porfavor" target="_blank">
-  <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; font-size:16px;">
-    WhatsApp
-  </button>
-</a>
-  
-
-  </div>
+    setInterval(autoScroll, 30);
+  </script>
 </body>
 </html>
