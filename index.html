@@ -10,8 +10,24 @@
   <style>
   body {background-color: black; margin: 0; height: auto;} 
 
-   .galeria-horizontal { display: flex; overflow-x: auto; gap: 10px; padding: 10px; scroll-behavior: smooth; overflow-scrolling: touch; border: 2px solid #444;}
-   .galeria-horizontal img { height: 200px; flex-shrink: 0; border-radius: 8px; border: 1px solid #ccc;}
+    .galeria {
+      display: flex;              /* coloca las imágenes en fila */
+      flex-direction: row;        /* asegura que sea horizontal */
+      overflow-x: auto;           /* activa scroll horizontal */
+      scroll-behavior: smooth;    /* desplazamiento suave */
+      gap: 10px;                  /* espacio entre imágenes */
+      padding: 10px;
+      border: 2px solid #333;
+    }
+
+    .galeria img {
+      height: auto;               /* mantiene proporción */
+      max-height: 200px;          /* límite de altura */
+      width: auto;                /* no fuerza ancho fijo */
+      flex-shrink: 0;             /* evita que se encojan */
+      border-radius: 8px;
+      border: 2px solid #ccc;
+    }
 
    .item { flex: 0 0 auto; text-align: center; }
    .item img { width: 200px; display: block; margin-bottom: 8px; }
@@ -34,8 +50,8 @@
 </a>
   <p>  ¡Estamos a la orden! </p>
 
-   <div class="galeria-horizontal">
-    <div class=".item">
+  <div class=".galeria">
+  <div class=".item">
 
   <img src="IMG1.jpeg" alt="Cocina" width="86%">
   <p> Cocina </p>
@@ -59,7 +75,7 @@
   </div>
   </div>
 
-
+  <p></p>
   <a href="https://wa.me/5215546690423?text=Hola%20Departamento%20Veleta%20Acapulco%20Informes%20Porfavor" target="_blank">
   <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; font-size:16px;">
     WhatsApp
