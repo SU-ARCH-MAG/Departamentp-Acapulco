@@ -20,7 +20,7 @@
       scroll-behavior: smooth;
       gap: 10px;
       padding: 10px;
-      border: 2px solid #333;
+      border: none;   /* sin marco */
     }
 
     .galeria img {
@@ -29,7 +29,7 @@
       width: auto;
       flex-shrink: 0;
       border-radius: 8px;
-      border: 2px solid #ccc;
+      border: none;   /* sin marco */
     }
 
     .item {
@@ -38,15 +38,15 @@
     }
 
     .item img {
-  width: 300px;     /* ancho fijo como en teléfono */
-  max-height: 400px;   /* altura máxima para que no se vean achatadas */
-  height: auto;      /* mantiene proporción */
-  object-fit: contain; /* asegura que no se deforme */
-  display: block;
-  margin-bottom: 8px;
-  border-radius: 8px;
-  border: 2px solid #ccc;
-}
+      width: 300px;       /* ancho fijo como en teléfono */
+      max-height: 400px;  /* altura máxima */
+      height: auto;       /* mantiene proporción */
+      object-fit: contain;
+      display: block;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      border: none;       /* sin marco */
+    }
 
     p {
       color: black;
@@ -91,8 +91,7 @@
       <div class="item"><img src="IMG4.jpeg" alt="Baño"><p>Baño</p></div>
       <div class="item"><img src="IMG9.jpg" alt="Sala"><p>Sala</p></div>
       <div class="item"><img src="IMG5.jpeg" alt="Comedor"><p>Comedor</p></div>
-      <div class="item"><img src="IMG6.jpeg" alt="Recamara"><p>2 Recámaras con camas king size <br>
-       Aire Acondicionado</p></div>
+      <div class="item"><img src="IMG6.jpeg" alt="Recamara"><p>2 Recámaras con camas king size <br>Aire Acondicionado</p></div>
       <div class="item"><img src="IMG7.jpeg" alt="Privado"><p>Fraccionamiento Privado</p></div>
       <div class="item"><img src="IMG8.jpeg" alt="Hamacas"><p>Zona de Hamacas</p></div>
     </div>
@@ -102,6 +101,5 @@
       <button>WhatsApp</button>
     </a>
   </div>
-
 </body>
 </html>
